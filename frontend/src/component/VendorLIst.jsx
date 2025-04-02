@@ -25,7 +25,7 @@ const VendorList = ({ customers }) => {
   };
 
   return (
-    <div className="w-full p-4 bg-gray-800 min-h-full">
+    <div className="w-full p-4 bg-gray-700 min-h-full">
       <h2 className="text-xl font-bold text-gray-100 text-center mb-4">Customers</h2>
       <div className="grid grid-cols-3 gap-4">
         {currentVendors.map((vendor, index) => (
@@ -37,17 +37,17 @@ const VendorList = ({ customers }) => {
         <button
           onClick={prevPage}
           disabled={currentPage === 1}
-          className={`px-4 py-2 mx-2 bg-blue-500 text-white rounded ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`px-4 py-2 mx-2  text-white rounded ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
-          Previous
+          ⬅️
         </button>
         <span className="text-white px-4 py-2">Page {currentPage} of {totalPages}</span>
         <button
           onClick={nextPage}
           disabled={currentPage === totalPages}
-          className={`px-4 py-2 mx-2 bg-blue-500 text-white rounded ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`px-4 py-n2 mx-2 text-white rounded ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
-          Next
+          ➡️
         </button>
       </div>
     </div>

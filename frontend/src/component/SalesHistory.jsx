@@ -8,11 +8,11 @@ const salesData = [
 export default function SalesHistory () {
  
     return (
-      <div className="p-6 bg-gray-800 shadow rounded-lg">
+      <div className="p-6 bg-gray-700 ">
         <h2 className="text-xl font-bold  text-amber-50 mb-4">Sales History</h2>
         <table className="w-full border-collapse border border-gray-300">
           <thead>
-            <tr className="bg-gray-800">
+            <tr className="bg-gray-600">
               <th className="border border-gray-300  text-amber-50 p-2">Buyer Name</th>
               <th className="border border-gray-300  text-amber-50 p-2">Item Name</th>
               <th className="border border-gray-300  text-amber-50 p-2">Quantity</th>
